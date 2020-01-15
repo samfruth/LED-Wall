@@ -1,5 +1,5 @@
 Fitter report for PixelPusherTEST
-Wed Jan 15 13:54:49 2020
+Wed Jan 15 14:22:25 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Jan 15 13:54:49 2020       ;
+; Fitter Status                      ; Successful - Wed Jan 15 14:22:25 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; PixelPusherTEST                             ;
 ; Top-level Entity Name              ; top_led                                     ;
@@ -160,8 +160,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processors 3-6         ;   0.1%      ;
+;     Processors 2-6         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -221,7 +220,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in F:/LED Wall TEST/output_files/PixelPusherTEST.pin.
+The pin-out file can be found in C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/output_files/PixelPusherTEST.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1195,54 +1194,54 @@ The pin-out file can be found in F:/LED Wall TEST/output_files/PixelPusherTEST.p
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+---------------------------------------------------------------------------------------------------------+
-; PLL Summary                                                                                             ;
-+-------------------------------+-------------------------------------------------------------------------+
-; Name                          ; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|pll1 ;
-+-------------------------------+-------------------------------------------------------------------------+
-; SDC pin name                  ; ppl|altpll_component|auto_generated|pll1                                ;
-; PLL mode                      ; Normal                                                                  ;
-; Compensate clock              ; clock0                                                                  ;
-; Compensated input/output pins ; --                                                                      ;
-; Switchover type               ; --                                                                      ;
-; Input frequency 0             ; 50.0 MHz                                                                ;
-; Input frequency 1             ; --                                                                      ;
-; Nominal PFD frequency         ; 50.0 MHz                                                                ;
-; Nominal VCO frequency         ; 600.0 MHz                                                               ;
-; VCO post scale K counter      ; 2                                                                       ;
-; VCO frequency control         ; Auto                                                                    ;
-; VCO phase shift step          ; 208 ps                                                                  ;
-; VCO multiply                  ; --                                                                      ;
-; VCO divide                    ; --                                                                      ;
-; Freq min lock                 ; 25.0 MHz                                                                ;
-; Freq max lock                 ; 54.18 MHz                                                               ;
-; M VCO Tap                     ; 0                                                                       ;
-; M Initial                     ; 1                                                                       ;
-; M value                       ; 12                                                                      ;
-; N value                       ; 1                                                                       ;
-; Charge pump current           ; setting 1                                                               ;
-; Loop filter resistance        ; setting 27                                                              ;
-; Loop filter capacitance       ; setting 0                                                               ;
-; Bandwidth                     ; 680 kHz to 980 kHz                                                      ;
-; Bandwidth type                ; Medium                                                                  ;
-; Real time reconfigurable      ; Off                                                                     ;
-; Scan chain MIF file           ; --                                                                      ;
-; Preserve PLL counter order    ; Off                                                                     ;
-; PLL location                  ; PLL_1                                                                   ;
-; Inclk0 signal                 ; clk_in                                                                  ;
-; Inclk1 signal                 ; --                                                                      ;
-; Inclk0 signal type            ; Dedicated Pin                                                           ;
-; Inclk1 signal type            ; --                                                                      ;
-+-------------------------------+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; PLL Summary                                                                                            ;
++-------------------------------+------------------------------------------------------------------------+
+; Name                          ; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|pll1 ;
++-------------------------------+------------------------------------------------------------------------+
+; SDC pin name                  ; ppl|altpll_component|auto_generated|pll1                               ;
+; PLL mode                      ; Normal                                                                 ;
+; Compensate clock              ; clock0                                                                 ;
+; Compensated input/output pins ; --                                                                     ;
+; Switchover type               ; --                                                                     ;
+; Input frequency 0             ; 50.0 MHz                                                               ;
+; Input frequency 1             ; --                                                                     ;
+; Nominal PFD frequency         ; 50.0 MHz                                                               ;
+; Nominal VCO frequency         ; 600.0 MHz                                                              ;
+; VCO post scale K counter      ; 2                                                                      ;
+; VCO frequency control         ; Auto                                                                   ;
+; VCO phase shift step          ; 208 ps                                                                 ;
+; VCO multiply                  ; --                                                                     ;
+; VCO divide                    ; --                                                                     ;
+; Freq min lock                 ; 25.0 MHz                                                               ;
+; Freq max lock                 ; 54.18 MHz                                                              ;
+; M VCO Tap                     ; 0                                                                      ;
+; M Initial                     ; 1                                                                      ;
+; M value                       ; 12                                                                     ;
+; N value                       ; 1                                                                      ;
+; Charge pump current           ; setting 1                                                              ;
+; Loop filter resistance        ; setting 27                                                             ;
+; Loop filter capacitance       ; setting 0                                                              ;
+; Bandwidth                     ; 680 kHz to 980 kHz                                                     ;
+; Bandwidth type                ; Medium                                                                 ;
+; Real time reconfigurable      ; Off                                                                    ;
+; Scan chain MIF file           ; --                                                                     ;
+; Preserve PLL counter order    ; Off                                                                    ;
+; PLL location                  ; PLL_1                                                                  ;
+; Inclk0 signal                 ; clk_in                                                                 ;
+; Inclk1 signal                 ; --                                                                     ;
+; Inclk0 signal type            ; Dedicated Pin                                                          ;
+; Inclk1 signal type            ; --                                                                     ;
++-------------------------------+------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; PLL Usage                                                                                                                                                                                                                                                                                                     ;
-+-------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
-; Name                                                                                ; Output Clock ; Mult ; Div ; Output Frequency ; Phase Shift ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                    ;
-+-------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
-; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|wire_pll1_clk[0] ; clock0       ; 4    ; 1   ; 200.0 MHz        ; 0 (0 ps)    ; 15.00 (208 ps)   ; 50/50      ; C0      ; 3             ; 2/1 Odd    ; --            ; 1       ; 0       ; ppl|altpll_component|auto_generated|pll1|clk[0] ;
-+-------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; PLL Usage                                                                                                                                                                                                                                                                                                    ;
++------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
+; Name                                                                               ; Output Clock ; Mult ; Div ; Output Frequency ; Phase Shift ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                    ;
++------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
+; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|wire_pll1_clk[0] ; clock0       ; 4    ; 1   ; 200.0 MHz        ; 0 (0 ps)    ; 15.00 (208 ps)   ; 50/50      ; C0      ; 3             ; 2/1 Odd    ; --            ; 1       ; 0       ; ppl|altpll_component|auto_generated|pll1|clk[0] ;
++------------------------------------------------------------------------------------+--------------+------+-----+------------------+-------------+------------------+------------+---------+---------------+------------+---------------+---------+---------+-------------------------------------------------+
 
 
 +------------------------------------------+
@@ -1259,17 +1258,17 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                    ;
-+-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                         ; Entity Name     ; Library Name ;
-+-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------+-----------------+--------------+
-; |top_led                                  ; 12 (0)      ; 11 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 5    ; 0            ; 1 (0)        ; 0 (0)             ; 11 (0)           ; |top_led                                                                    ; top_led         ; work         ;
-;    |clk_div:clks|                         ; 12 (12)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 11 (11)          ; |top_led|clk_div:clks                                                       ; clk_div         ; work         ;
-;    |sys_clk:ppl|                          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_led|sys_clk:ppl                                                        ; sys_clk         ; work         ;
-;       |altpll:altpll_component|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_led|sys_clk:ppl|altpll:altpll_component                                ; altpll          ; work         ;
-;          |sys_clk_altpll2:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_led|sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated ; sys_clk_altpll2 ; work         ;
-+-------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------------------------------------+-----------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                 ;
++------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node               ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                        ; Entity Name    ; Library Name ;
++------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------+----------------+--------------+
+; |top_led                                 ; 12 (0)      ; 11 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 5    ; 0            ; 1 (0)        ; 0 (0)             ; 11 (0)           ; |top_led                                                                   ; top_led        ; work         ;
+;    |clk_div:clks|                        ; 12 (12)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 11 (11)          ; |top_led|clk_div:clks                                                      ; clk_div        ; work         ;
+;    |sys_clk:ppl|                         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_led|sys_clk:ppl                                                       ; sys_clk        ; work         ;
+;       |altpll:altpll_component|          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_led|sys_clk:ppl|altpll:altpll_component                               ; altpll         ; work         ;
+;          |sys_clk_altpll:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top_led|sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated ; sys_clk_altpll ; work         ;
++------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1296,26 +1295,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                                 ;
-+-------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                                ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; ar                                                                                  ; PIN_Y1            ; 11      ; Async. clear ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; clk_div:clks|LessThan1~0                                                            ; LCCOMB_X88_Y1_N26 ; 6       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; clk_in                                                                              ; PIN_Y2            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|wire_pll1_clk[0] ; PLL_1             ; 11      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-+-------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                                ;
++------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                               ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; ar                                                                                 ; PIN_Y1            ; 11      ; Async. clear ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; clk_div:clks|LessThan1~0                                                           ; LCCOMB_X88_Y1_N26 ; 6       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; clk_in                                                                             ; PIN_Y2            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1             ; 11      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
++------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                                           ;
-+-------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                                                ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; ar                                                                                  ; PIN_Y1   ; 11      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
-; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 11      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-+-------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                                          ;
++------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                                               ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; ar                                                                                 ; PIN_Y1   ; 11      ; 0                                    ; Global Clock         ; GCLK0            ; --                        ;
+; sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 11      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
++------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
 +------------------------------------------------+
@@ -1526,8 +1525,8 @@ Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors
 Info (119006): Selected device EP4CE115F29C7 for design "PixelPusherTEST"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Info (15535): Implemented PLL "sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|pll1" as Cyclone IV E PLL type File: F:/LED Wall TEST/db/sys_clk_altpll2.v Line: 43
-    Info (15099): Implementing clock multiplication of 4, clock division of 1, and phase shift of 0 degrees (0 ps) for sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|wire_pll1_clk[0] port File: F:/LED Wall TEST/db/sys_clk_altpll2.v Line: 43
+Info (15535): Implemented PLL "sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|pll1" as Cyclone IV E PLL type File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/db/sys_clk_altpll.v Line: 43
+    Info (15099): Implementing clock multiplication of 4, clock division of 1, and phase shift of 0 degrees (0 ps) for sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|wire_pll1_clk[0] port File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/db/sys_clk_altpll.v Line: 43
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
@@ -1555,9 +1554,9 @@ Info (332096): The command derive_clocks did not find any clocks to derive.  No 
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node sys_clk:ppl|altpll:altpll_component|sys_clk_altpll2:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: F:/LED Wall TEST/db/sys_clk_altpll2.v Line: 77
+Info (176353): Automatically promoted node sys_clk:ppl|altpll:altpll_component|sys_clk_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1) File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/db/sys_clk_altpll.v Line: 77
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node ar~input (placed in PIN Y1 (CLK3, DIFFCLK_1n)) File: F:/LED Wall TEST/top_led.v Line: 6
+Info (176353): Automatically promoted node ar~input (placed in PIN Y1 (CLK3, DIFFCLK_1n)) File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 6
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G0
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1604,21 +1603,21 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin clk_in uses I/O standard 3.3-V LVTTL at Y2 File: F:/LED Wall TEST/top_led.v Line: 5
-Info (144001): Generated suppressed messages file F:/LED Wall TEST/output_files/PixelPusherTEST.fit.smsg
+    Info (169178): Pin clk_in uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 5
+Info (144001): Generated suppressed messages file C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/output_files/PixelPusherTEST.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 5820 megabytes
-    Info: Processing ended: Wed Jan 15 13:54:49 2020
+    Info: Peak virtual memory: 5828 megabytes
+    Info: Processing ended: Wed Jan 15 14:22:25 2020
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in F:/LED Wall TEST/output_files/PixelPusherTEST.fit.smsg.
+The suppressed messages can be found in C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/output_files/PixelPusherTEST.fit.smsg.
 
 

@@ -1,3 +1,3 @@
-Warning (10268): Verilog HDL information at top_led.v(63): always construct contains both blocking and non-blocking assignments File: F:/LED Wall TEST/top_led.v Line: 63
-Warning (10268): Verilog HDL information at sr_ctrl_rev2.v(31): always construct contains both blocking and non-blocking assignments File: F:/LED Wall TEST/sr_ctrl_rev2.v Line: 31
-Warning (10268): Verilog HDL information at sr_ctrl_rev2.v(40): always construct contains both blocking and non-blocking assignments File: F:/LED Wall TEST/sr_ctrl_rev2.v Line: 40
+Warning (10268): Verilog HDL information at top_led.v(63): always construct contains both blocking and non-blocking assignments File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 63
+Warning (10268): Verilog HDL information at sr_ctrl_rev2.v(31): always construct contains both blocking and non-blocking assignments File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/sr_ctrl_rev2.v Line: 31
+Warning (10268): Verilog HDL information at sr_ctrl_rev2.v(40): always construct contains both blocking and non-blocking assignments File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/sr_ctrl_rev2.v Line: 40

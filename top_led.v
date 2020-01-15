@@ -51,7 +51,7 @@ assign sr0_data[5] = frame[5][n];
 assign sr0_data[6] = frame[6][n];
 assign sr0_data[7] = frame[7][n];		
 
-reg n = 0; //Bit index OR could be the index for LEDs
+reg n = 0; //Bit index OR could be the index for LEDs, can I initialize like this?
 
 sr_ctrl_rev2 sr0(
 	//.clk_in(clk_200),
