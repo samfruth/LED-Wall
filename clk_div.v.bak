@@ -1,0 +1,61 @@
+// 50 MHz Clock divider
+// Want it to be a 20 and 2.5 Mhz clock output from 200 MHz PLL clock
+// clk_div.v
+// Don M. Gruenbacher
+// Feb. 4, 2000
+//
+// Modified by Sam Fruth, Arpil 14, 2018
+// Two seperate outputs, one for the LFSR, one for the FSM
+
+module    clk_div(ar, clk_in, clk_out0, clk_out1, clk_out2);
+    input ar;
+    input clk_in;         // 50 MHz for audio codec on DE2 board -> WILL BE 200 MHZ
+    output reg clk_out0, clk_out1, clk_out2; //
+    
+    parameter n = 15;      // Bit width of counter and limit (log2 of limit)
+    parameter [n-1:0] limit0 = 15'd250000;
+    reg [n-1:0]   count0;
+	
+	parameter m = 26;      // Bit width of counter and limit (log2 of limit)
+    parameter [m-1:0] limit1 = 26'd50000000;
+    reg [m-1:0]   count1;
+    
+    //Controls the 1kHz clock output
+    always @(negedge ar or posedge clk_in)
+    if(~ar)
+       begin
+          count0 = 0;
+		  clk_out0 = 1'b0; 
+       end
+    else
+      begin    
+       if(count0 >= limit0) 
+         begin
+		 clk_out0 = ~clk_out0;
+         
+		 count0 = 0;
+		 end
+		else
+			count0 = count0 + 1;
+      end
+	  
+	//Controls the 2 second clock output  
+	always @(negedge ar or posedge clk_in)
+    if(~ar)
+       begin
+          count1 = 0;
+		  clk_out1 = 1'b0;
+       end
+    else
+      begin    
+       if(count1 >= limit1)
+         begin
+		 clk_out1 = ~clk_out1;
+         
+		 count1 = 0;
+		 end
+		else
+			count1 = count1 + 1;
+      end
+                                                                                                                                                                                                              
+ endmodule 

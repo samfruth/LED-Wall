@@ -1,0 +1,7 @@
+//Description of the Pixel Pusher
+module PixelPusherTEST (pix_in, clk_in, ser_out, r_clk, sr_clk)
+
+output reg r_clk, sr_clk;
+output wire [7:0] ser_out;
+
+input wire pix_in;

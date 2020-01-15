@@ -1,0 +1,7 @@
+
+State Machine - |sr_ctrl|st
+Name st.StD st.StC st.StB st.StA 
+st.StA 0 0 0 0 
+st.StB 0 0 1 1 
+st.StC 0 1 0 1 
+st.StD 1 0 0 1 

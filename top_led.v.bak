@@ -1,0 +1,9 @@
+// Top Level File for sr_ctrl.v
+// Stores a 2D array of frames
+
+
+
+wire [239:0] frame [7:0]; // For 10 LEDS, 8 strands
+
+assign frame[0] = 240'ff000000ff000000ffff000000ff000000ffff000000ff000000ffffffff;
+assign frame[1:7] = 0;

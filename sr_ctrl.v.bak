@@ -1,0 +1,6 @@
+// This takes 8 bit vector in and uses that as the DATA for the LED. 
+// It spits out the 8 bits to the SR - so lets call it sr_controller.
+// It will use an FSM to do this, operates at 200 MHz. 
+// Implements clk_div 
+
+module sr_controller(pix_in, clk, sr_clk, r_clk, ser_out, ar)
