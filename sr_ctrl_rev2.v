@@ -28,7 +28,7 @@ assign ser_out = (st == send_one) ? 1'b1 : // Send 1
 	(st == send_data) ? data_in[sr_count] : // Send data_in
 	1'b0; // Otherwise, send 0's
 	
-always @ (posedge sr_clk /*or negedge ar*/) begin // Recieves LED data from top_led
+always @ (posedge sr_clk or negedge ar) begin // Recieves LED data from top_led
 	if(~ar)
 		out_data = 0;// Handle reset on input loop
 	else
@@ -37,7 +37,7 @@ always @ (posedge sr_clk /*or negedge ar*/) begin // Recieves LED data from top_
 		end // top else
 end // always block
 	
-always @ (negedge sr_clk /*or negedge ar*/) begin // This clocks out the serial data
+always @ (negedge sr_clk or negedge ar) begin // This clocks out the serial data
 	if(~ar)
 		sr_count <= 3'd0; // Handles a reset
 	else 

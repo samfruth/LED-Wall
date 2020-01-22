@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("F:/LED Wall TEST/output_files/") File("PixelPusherTEST.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/output_files/") File("PixelPusherTEST.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

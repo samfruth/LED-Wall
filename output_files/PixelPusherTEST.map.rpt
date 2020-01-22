@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PixelPusherTEST
-Wed Jan 15 14:22:15 2020
+Wed Jan 22 08:57:29 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 15 14:22:15 2020       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jan 22 08:57:29 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; PixelPusherTEST                             ;
 ; Top-level Entity Name              ; top_led                                     ;
@@ -676,14 +676,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+-------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sr_ctrl_rev2:sr0"                                                                                                                                  ;
-+---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                                                         ;
-+---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; data_in ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "data_in[7..1]" will be connected to GND. ;
-; ser_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                        ;
-+---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sr_ctrl_rev2:sr0"                                                                                                 ;
++---------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                  ;
++---------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; data_in[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                             ;
+; data_in[7..2] ; Input  ; Info     ; Stuck at GND                                                                                             ;
+; ser_out       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -725,7 +726,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jan 15 14:22:06 2020
+    Info: Processing started: Wed Jan 22 08:57:16 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PixelPusherTEST -c PixelPusherTEST
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -738,9 +739,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file top_led
     Info (12023): Found entity 1: top_led File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file sr_ctrl_rev2.v
     Info (12023): Found entity 1: sr_ctrl_rev2 File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/sr_ctrl_rev2.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at top_led.v(58): created implicit net for "s0_data" File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 58
 Info (12127): Elaborating entity "top_led" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at top_led.v(43): object "sr0_data" assigned a value but never read File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 43
 Warning (10027): Verilog HDL or VHDL warning at the top_led.v(45): index expression is not wide enough to address all of the elements in the array File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 45
 Warning (10027): Verilog HDL or VHDL warning at the top_led.v(46): index expression is not wide enough to address all of the elements in the array File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 46
 Warning (10027): Verilog HDL or VHDL warning at the top_led.v(47): index expression is not wide enough to address all of the elements in the array File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 47
@@ -749,7 +748,7 @@ Warning (10027): Verilog HDL or VHDL warning at the top_led.v(49): index express
 Warning (10027): Verilog HDL or VHDL warning at the top_led.v(50): index expression is not wide enough to address all of the elements in the array File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 50
 Warning (10027): Verilog HDL or VHDL warning at the top_led.v(51): index expression is not wide enough to address all of the elements in the array File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 51
 Warning (10027): Verilog HDL or VHDL warning at the top_led.v(52): index expression is not wide enough to address all of the elements in the array File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 52
-Warning (10230): Verilog HDL assignment warning at top_led.v(68): truncated value with size 32 to match size of target (1) File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 68
+Warning (10230): Verilog HDL assignment warning at top_led.v(69): truncated value with size 32 to match size of target (1) File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 69
 Warning (10034): Output port "data_out" at top_led.v(7) has no driver File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 7
 Info (12128): Elaborating entity "sys_clk" for hierarchy "sys_clk:ppl" File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/top_led.v Line: 32
 Info (12128): Elaborating entity "altpll" for hierarchy "sys_clk:ppl|altpll:altpll_component" File: C:/Users/fruth/OneDrive/Documents/GitHub/LED-Wall/sys_clk.v Line: 90
@@ -833,11 +832,11 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 12 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
     Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Wed Jan 15 14:22:16 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Processing ended: Wed Jan 22 08:57:29 2020
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

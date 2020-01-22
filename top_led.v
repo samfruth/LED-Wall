@@ -55,17 +55,20 @@ reg n = 0; //Bit index OR could be the index for LEDs, can I initialize like thi
 
 sr_ctrl_rev2 sr0(
 	//.clk_in(clk_200),
-	.data_in(s0_data),
+	.data_in(sr0_data),
 	.sr_clk(sr_clk),
 	.ar(ar)
 	);
 	
-always @ (posedge sr_clk /*or negedge ar*/) begin // clocking values to sr0 at 200 MHz
+always @ (posedge sr_clk or negedge ar) begin // clocking values to sr0 at 200 MHz
 	if(~ar)
 		n = 0; // Handles a reset, not sure what that will mean right now
 	else 
 		begin
+		if( n < 119)
 			n <= n + 1;
+		else
+			n <= 0;
 		end // top else
 end // always block
 	
